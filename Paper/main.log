@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.29)  27 JUN 2018 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.29)  1 JUL 2018 15:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -562,36 +562,85 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (main.aux)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
+\c@tracingmulticols=\count172
+\mult@box=\box38
+\multicol@leftmargin=\dimen156
+\c@unbalance=\count173
+\c@collectmore=\count174
+\doublecol@number=\count175
+\multicoltolerance=\count176
+\multicolpretolerance=\count177
+\full@width=\dimen157
+\page@free=\dimen158
+\premulticols=\dimen159
+\postmulticols=\dimen160
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box39
+\last@line=\box40
+\maxbalancingoverflow=\dimen161
+\mult@rightbox=\box41
+\mult@grightbox=\box42
+\mult@gfirstbox=\box43
+\mult@firstbox=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\c@columnbadness=\count178
+\c@finalcolumnbadness=\count179
+\last@try=\dimen162
+\multicolovershoot=\dimen163
+\multicolundershoot=\dimen164
+\mult@nat@firstbox=\box62
+\colbreak@box=\box63
+\mc@col@check@num=\count180
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count172
-\scratchdimen=\dimen156
-\scratchbox=\box38
-\nofMPsegments=\count173
-\nofMParguments=\count174
+\scratchcounter=\count181
+\scratchdimen=\dimen165
+\scratchbox=\box64
+\nofMPsegments=\count182
+\nofMParguments=\count183
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count175
-\MPscratchDim=\dimen157
-\MPnumerator=\count176
-\makeMPintoPDFobject=\count177
+\MPscratchCnt=\count184
+\MPscratchDim=\dimen166
+\MPnumerator=\count185
+\makeMPintoPDFobject=\count186
 \everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -610,8 +659,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 24.
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring OFF on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -619,52 +668,168 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count178
+\c@section@level=\count187
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c@lstlisting=\count179
- (Section/Einfuerung.tex) (Section/Fazit.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
-[]\OT1/ptm/m/n/8 "Amazon Lambda" []$https : / / aws . amazon . com / de / lambd
-a/$[] Ac-cessed
+\c@lstlisting=\count188
+ (Section/Einfuerung.tex
+Underfull \hbox (badness 4181) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 mehr einge-setzt, um die In-ter-ak-tion zwis-chen Men-sch
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
-[1{C:/Users/Michael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
+Underfull \hbox (badness 2753) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 vie-len mehr. Doch was steckt hin-ter einer k[]unstlichen
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 In-tel-li-genz? Eine k[]unstliche In-tel-li-genz ver-sucht durc
+h
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 4--5
+[]\OT1/ptm/m/n/10 Bei einer KI kommt meist maschinelles Ler-nen zum
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 4--5
+\OT1/ptm/m/n/10 Ein-satz, wobei von er-hobe-nen Daten gel-ernt wird, um
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 4--5
+\OT1/ptm/m/n/10 dann Entschei-dung tr-e-f-fen zu k[]onnen. Es gibt eine
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 4--5
+\OT1/ptm/m/n/10 Reihe an vordefinierten Al-go-rith-men die an so-ge-nan-nte
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 4--5
+\OT1/ptm/m/n/10 Denkweise eines Men-schen m[]oglichst gut nachzuah-men.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) (Section/RelatedWork.tex [1{C:/Users/Michael/AppData/Local/MiKTeX/2.9/pdftex/
+config/pdftex.map}
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
+<Pictures/Chainer_Comparisson.png, id=90, 578.16pt x 397.485pt>
+File: Pictures/Chainer_Comparisson.png Graphic file (type png)
+<use Pictures/Chainer_Comparisson.png>
+Package pdftex.def Info: Pictures/Chainer_Comparisson.png  used on input line 3
+3.
+(pdftex.def)             Requested size: 227.74333pt x 156.5712pt.
 
-(main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\acf' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\acs' on input line 44.
+
+) (Section/Tensorflow.tex) (Section/TutorialDistributedTensorflow.tex)
+(Section/Evaluierung.tex) (Section/Fazit.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+\OT1/ptm/m/n/8 de / technik / computer[]und[]roboter / kuenstliche[]intelligenz
+/$[] Ac-cessed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+[]\OT1/ptm/m/n/8 "Big Data In-sider - Maschinelles Ler-nen und
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+\OT1/ptm/m/n/8 Deep Learn-ing" []$https : / / www . bigdata-[]insider . de /
+ []
+
+
+Overfull \hbox (23.92754pt too wide) in paragraph at lines 78--81
+\OT1/ptm/m/n/8 ki-[]maschinelles-[]lernen-[]und-[]deep-[]learning-[]das-[]sind-
+[]die-[]unterschiede-[]a-[]588067/$[]
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 118--121
+[]\OT1/ptm/m/n/8 "Microsoft Cog-ni-tive Toolkit (CNTK)" []$https : / / docs . m
+icrosoft . com /
+ []
+
+[2 <./Pictures/Chainer_Comparisson.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 133--136
+[]\OT1/ptm/m/n/8 "AWS In-tro-duc-ing Gluon" []$https : / / aws . amazon . com /
+ de / blogs / aws /
+ []
+
+
+Overfull \hbox (26.9997pt too wide) in paragraph at lines 133--136
+\OT1/ptm/m/n/8 introducing-[]gluon-[]a-[]new-[]library-[]for-[]machine-[]learni
+ng-[]from-[]aws-[]and-[]microsoft/$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
+[]\OT1/ptm/m/n/8 "Amazon DSSTNE" []$https : / / aws . amazon . com / de / blogs
+ / aws /
+ []
+
+
+Overfull \hbox (26.9997pt too wide) in paragraph at lines 138--141
+\OT1/ptm/m/n/8 introducing-[]gluon-[]a-[]new-[]library-[]for-[]machine-[]learni
+ng-[]from-[]aws-[]and-[]microsoft/$[]
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+[3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+ (main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C76569C8392E4B4FF91061D63677681A;144.
+(rerunfilecheck)             Checksum: 7BB1DE8A9CD13B932046F9F6C45D4B09;804.
  ) 
 Here is how much of TeX's memory you used:
- 13120 strings out of 492976
- 201486 string characters out of 3135985
- 352728 words of memory out of 3000000
- 16791 multiletter control sequences out of 15000+200000
- 36585 words of font info for 72 fonts, out of 3000000 for 9000
+ 13527 strings out of 492976
+ 207888 string characters out of 3135985
+ 369372 words of memory out of 3000000
+ 17151 multiletter control sequences out of 15000+200000
+ 38455 words of font info for 75 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 59i,5n,94p,1995b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,5n,94p,1995b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 33526 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (3 pages, 208207 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,6 +8,7 @@
 \usepackage[bookmarksopen, bookmarksdepth=2, breaklinks=true]{hyperref}
 \usepackage[official]{eurosym}
 \usepackage{listings}
+\usepackage{multicol}
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
@@ -16,7 +17,14 @@
 \fi
 
 
-\newacronym{mbaas}{MBaaS}{Mobile Backend as a Service}
+\newacronym{ki}{KI}{Künstliche Intelligenz}
+\newacronym{gpu}{GPU}{Grphics Processing Unit}
+\newacronym{bair}{BAIR}{Berkley AI Research}
+\newacronym{cpu}{CPU}{Central Processing Unit}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{cntk}{CNTK}{Microsoft Cognitive Toolkit}
+\newacronym{aws}{AWS}{Amazon Web Services}
+\newacronym{dsstne}{DSSTNE}{Deep Scalable Sparse Tensor Network Engine}
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
@@ -42,174 +50,95 @@
 
 
 \end{abstract}
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%IEEEtran, journal, \LaTeX, paper, template.
-%\end{IEEEkeywords}
-
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
 
 % *** START OF SECTIONS ***--------------------------------------------
 
 \input{Section/Einfuerung}
+\input{Section/RelatedWork}
+\input{Section/Tensorflow}
+\input{Section/TutorialDistributedTensorflow}
+\input{Section/Evaluierung}
 \input{Section/Fazit}
 
 % *** END OF SECTIONS ***---------------------------------------------
-
-% needed in second column of first page if using \IEEEpubid
-%\IEEEpubidadjcol
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals use top floats exclusively.
-% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
-% floats. This can be corrected via the \fnbelowfloat command of the
-% stfloats package.
-
-
-
-
-
-
-
-
-
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
-
-
-% use section* for acknowledgement
-%\section*{Acknowledgment}
-
-
-%The authors would like to thank...
-
-
-% Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
   \newpage
 \fi
 
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
-\bibitem{AmazonLambda}
-"Amazon Lambda"
-\url{https://aws.amazon.com/de/lambda/} 
-Accessed 18.06.2018
+\bibitem{PlanetWissenKI}
+"Planet Wissen - Künstliche Intelligenz"
+\url{https://www.planet-wissen.de/technik/computer_und_roboter/kuenstliche_intelligenz/} 
+Accessed 20.06.2018
+
+\bibitem{BigDataInsiderDeepLearning}
+"Big Data Insider - Maschinelles Lernen und Deep Learning"
+\url{https://www.bigdata-insider.de/ki-maschinelles-lernen-und-deep-learning-das-sind-die-unterschiede-a-588067/} 
+Accessed 20.06.2018
+
+\bibitem{DeepLearningFrameworks}
+"DL4J - Deep Learning Frameworks Comparison"
+\url{https://deeplearning4j.org/compare-dl4j-tensorflow-pytorch}
+Accessed 20.06.2018
+
+\bibitem{Torch}
+"Torch"
+\url{https://pytorch.org/about/}
+Accessed 20.06.2018
+
+\bibitem{Caffe}
+"Caffe"
+\url{http://caffe.berkeleyvision.org/}
+Accessed 21.06.2018
+
+\bibitem{Caffe2}
+"Caffe2"
+\url{https://caffe2.ai/}
+Accessed 21.06.2018
+
+\bibitem{Keras}
+"Keras"
+\url{https://keras.io/}
+Accessed 24.06.2018
+
+\bibitem{Elephas}
+"Elephas"
+\url{https://github.com/maxpumperla/elephas}
+Accessed 24.06.2018
+
+\bibitem{Chainer}
+"Chainer"
+\url{https://chainer.org/blog/}
+Accessed 01.07.2018
+
+\bibitem{CNTK}
+"\acf{cntk}"
+\url{https://docs.microsoft.com/de-de/cognitive-toolkit/}
+Accessed 01.07.2018
+
+\bibitem{WikipediaApacheMXNet}
+"Wikipedia - Apache MXNet"
+\url{https://en.wikipedia.org/wiki/Apache_MXNet}
+Accessed 01.07.2018
+
+\bibitem{AWSApacheMXNet}
+"AWS Apache MXNet"
+\url{https://aws.amazon.com/de/mxnet/}
+Accessed 01.07.2018
+
+\bibitem{AWSintroducingGluon}
+"AWS Introducing Gluon"
+\url{https://aws.amazon.com/de/blogs/aws/introducing-gluon-a-new-library-for-machine-learning-from-aws-and-microsoft/}
+Accessed 01.07.2018
+
+\bibitem{Amazon DSSTNE}
+"Amazon DSSTNE"
+\url{https://aws.amazon.com/de/blogs/aws/introducing-gluon-a-new-library-for-machine-learning-from-aws-and-microsoft/}
+Accessed 01.07.2018
+
 \end{thebibliography}
 
 % biography section
