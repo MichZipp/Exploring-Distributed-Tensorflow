@@ -9,8 +9,10 @@
 \BOOKMARK [2][]{subsection.2.7}{Apache MXNet}{section.2}% 9
 \BOOKMARK [2][]{subsection.2.8}{Amazon dsstne}{section.2}% 10
 \BOOKMARK [2][]{subsection.2.9}{Eclipse dl4j}{section.2}% 11
-\BOOKMARK [1][]{section.3}{Tensorflow}{}% 12
-\BOOKMARK [1][]{section.4}{Tutorial: Distributed Tensorflow}{}% 13
-\BOOKMARK [1][]{section.5}{Evaluierung}{}% 14
-\BOOKMARK [1][]{section.6}{Zusammenfassung}{}% 15
-\BOOKMARK [1][]{section*.3}{References}{}% 16
+\BOOKMARK [1][]{section.3}{TensorFlow}{}% 12
+\BOOKMARK [2][]{subsection.3.1}{Installation}{section.3}% 13
+\BOOKMARK [2][]{subsection.3.2}{Unterst\374tzung von mobilen Plattformen}{section.3}% 14
+\BOOKMARK [1][]{section.4}{Tutorial: Distributed Tensorflow}{}% 15
+\BOOKMARK [1][]{section.5}{Evaluierung}{}% 16
+\BOOKMARK [1][]{section.6}{Zusammenfassung}{}% 17
+\BOOKMARK [1][]{section*.3}{References}{}% 18
