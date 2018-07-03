@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.29)  1 JUL 2018 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.29)  3 JUL 2018 13:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -611,7 +611,11 @@ Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
 \mult@nat@firstbox=\box62
 \colbreak@box=\box63
 \mc@col@check@num=\count180
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `fig:architektur-servemodel' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -628,8 +632,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count181
 \scratchdimen=\dimen165
@@ -735,7 +738,7 @@ config/pdftex.map}
 
 
 ]
-<Pictures/Chainer_Comparisson.png, id=94, 578.16pt x 397.485pt>
+<Pictures/Chainer_Comparisson.png, id=114, 578.16pt x 397.485pt>
 File: Pictures/Chainer_Comparisson.png Graphic file (type png)
 <use Pictures/Chainer_Comparisson.png>
 Package pdftex.def Info: Pictures/Chainer_Comparisson.png  used on input line 3
@@ -775,81 +778,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 [2 <./Pictures/Chainer_Comparisson.png>]
-<Pictures/GitHubFrameworkVergleich.png, id=119, 473.97075pt x 299.9205pt>
+<Pictures/GitHubFrameworkVergleich.png, id=139, 473.97075pt x 299.9205pt>
 File: Pictures/GitHubFrameworkVergleich.png Graphic file (type png)
 <use Pictures/GitHubFrameworkVergleich.png>
 Package pdftex.def Info: Pictures/GitHubFrameworkVergleich.png  used on input l
 ine 55.
 (pdftex.def)             Requested size: 227.74333pt x 144.11122pt.
-) (Section/Tensorflow.tex)
+) (Section/Tensorflow.tex
+Underfull \hbox (badness 1789) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 Beschleunigung mit der An-droid Neu-ral Net-works API.
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 quan-tisierte Ker-nel, die kleinere und schnellere Mod-elle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+ []\OT1/ptm/m/it/10 TensorFlow.js: [][] \OT1/ptm/m/n/10 Ten-sor-Flow.js ist ein
+e JavaScript-
+ []
+
+) (Section/DistributedTensoflow.tex
+<Pictures/Architektur-ServeModel.jpg, id=145, 398.6895pt x 187.902pt>
+File: Pictures/Architektur-ServeModel.jpg Graphic file (type jpg)
+<use Pictures/Architektur-ServeModel.jpg>
+Package pdftex.def Info: Pictures/Architektur-ServeModel.jpg  used on input lin
+e 12.
+(pdftex.def)             Requested size: 227.74333pt x 107.33461pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:architektur-updatemodel' on page 3 undefined on i
+nput line 18.
+
+[3 <./Pictures/GitHubFrameworkVergleich.png>]
+<Pictures/Architektur-UpdateModel.jpg, id=159, 398.6895pt x 187.902pt>
+File: Pictures/Architektur-UpdateModel.jpg Graphic file (type jpg)
+<use Pictures/Architektur-UpdateModel.jpg>
+Package pdftex.def Info: Pictures/Architektur-UpdateModel.jpg  used on input li
+ne 22.
+(pdftex.def)             Requested size: 227.74333pt x 107.33461pt.
+)
 (Section/TutorialDistributedTensorflow.tex) (Section/Evaluierung.tex)
 (Section/Fazit.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
 \OT1/ptm/m/n/8 de / technik / computer[]und[]roboter / kuenstliche[]intelligenz
 /$[] Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 []\OT1/ptm/m/n/8 "Big Data In-sider - Maschinelles Ler-nen und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 \OT1/ptm/m/n/8 Deep Learn-ing" []$https : / / www . bigdata-[]insider . de /
  []
 
 
-Overfull \hbox (23.92754pt too wide) in paragraph at lines 79--82
+Overfull \hbox (23.92754pt too wide) in paragraph at lines 80--83
 \OT1/ptm/m/n/8 ki-[]maschinelles-[]lernen-[]und-[]deep-[]learning-[]das-[]sind-
 []die-[]unterschiede-[]a-[]588067/$[]
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 119--122
+Underfull \hbox (badness 2005) in paragraph at lines 120--123
 []\OT1/ptm/m/n/8 "Microsoft Cog-ni-tive Toolkit (CNTK)" []$https : / / docs . m
 icrosoft . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
 []\OT1/ptm/m/n/8 "AWS In-tro-duc-ing Gluon" []$https : / / aws . amazon . com /
  de / blogs / aws /
  []
 
 
-Overfull \hbox (26.9997pt too wide) in paragraph at lines 134--137
+Overfull \hbox (26.9997pt too wide) in paragraph at lines 135--138
 \OT1/ptm/m/n/8 introducing-[]gluon-[]a-[]new-[]library-[]for-[]machine-[]learni
 ng-[]from-[]aws-[]and-[]microsoft/$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--142
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 []\OT1/ptm/m/n/8 "Amazon DSSTNE" []$https : / / aws . amazon . com / de / blogs
  / aws /
  []
 
 
-Overfull \hbox (26.9997pt too wide) in paragraph at lines 139--142
+Overfull \hbox (26.9997pt too wide) in paragraph at lines 140--143
 \OT1/ptm/m/n/8 introducing-[]gluon-[]a-[]new-[]library-[]for-[]machine-[]learni
 ng-[]from-[]aws-[]and-[]microsoft/$[]
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-[3 <./Pictures/GitHubFrameworkVergleich.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+[4 <./Pictures/Architektur-ServeModel.jpg> <./Pictures/Architektur-UpdateModel.
+jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 23C5D53416EA83708416F94EB9E21669;866.
+(rerunfilecheck)             Checksum: 992AB9CDBB930211A0328140417BC55C;1207.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 13568 strings out of 492976
- 208634 string characters out of 3135985
- 370379 words of memory out of 3000000
- 17188 multiletter control sequences out of 15000+200000
- 38455 words of font info for 75 fonts, out of 3000000 for 9000
+ 13609 strings out of 492976
+ 209595 string characters out of 3135985
+ 369598 words of memory out of 3000000
+ 17205 multiletter control sequences out of 15000+200000
+ 39562 words of font info for 76 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  59i,5n,94p,1995b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -857,9 +906,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 234334 bytes).
+Output written on main.pdf (4 pages, 342988 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
