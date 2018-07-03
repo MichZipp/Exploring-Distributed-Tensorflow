@@ -1,4 +1,4 @@
-\section{Distributed TensorFlow}
+\section{Verteiltes TensorFlow}
 Nachdem im vorherigen Kapitel einen kleiner Überblick über TensorFlow gegeben wurde, soll jetzt die Verteilung einer TensorFlow Umgebung auf mehrere Instanzen näher betrachtet werden. Dieses Kapitel stellt nötiges Wissen bereit, dass im nächsten Kapitel im Rahmen eines Tutorials zur Einrichtung einer verteilten TensorFlow Umgebung eingesetzt wird. 
 
 \subsection{Architektur}
@@ -31,6 +31,7 @@ Die Arbeiter lesen gleichzeitig das Model vom Parameterserver und berechnen mit 
 
 \subsubsection{Asynchron}
 Die Arbeiter lesen asynchron von den Parameterserver, berechnen ihre Trainingsoperation und senden asynchrone Aktualisierungen an den Parameterserver. Zu jedem Zeitpunkt könnten zwei verschiedene Arbeiter unterschiedliche Werte für ihr Model besitzen.
+
 
 
 
