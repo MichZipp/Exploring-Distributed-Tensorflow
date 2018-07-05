@@ -60,7 +60,7 @@ Als nächstes müssen wir schauen, ob die aktuelle Instanz als Arbeiter oder Par
 
 \vspace{2mm}
 \subsubsection{Arbeiter}
-Wenn eine Instanz kein Parameterserver ist, ist sie automatisch ein Arbeiter und führt Berechnung durch. Wir wollen dabei nicht genauer auf die Berechnungen eingehen und nutzen daher einen Beispielcode eines Tutorials von TensorFlow und schauen uns an, wie die eine Berechnung auf einem Arbeiter durchgeführt wird:
+Wenn eine Instanz kein Parameterserver ist, ist sie automatisch ein Arbeiter und führt Berechnung durch. Die Arbeiter führen ihre Berechnungen synchron synchron durch und warten deshalb nach jeder Iteration, bis jeder Arbeiter die Variablen auf dem Parameterserver synchronisiert hat. Anschließend verteilt der Parameterserver wieder die aktualisierten Variablen an die Arbeiter. Wir wollen dabei nicht genauer auf die Berechnungen eingehen und nutzen daher einen Beispielcode eines Tutorials von TensorFlow und schauen uns an, wie die eine Berechnung auf einem Arbeiter durchgeführt wird:
 
 \begin{itemize}
 	\item Zuweisung einer Berechnung zu einem Arbeiter: \newline
