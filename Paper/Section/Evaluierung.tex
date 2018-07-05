@@ -6,34 +6,41 @@ Die Nutzung einer verteilten TensorFlow Umgebung zeigt deutliche Performance Vor
 	\begin{itemize}
 		\item Die Anzahl an Iterationen für eine Session wurde auf 1000 gesetzt:
 		\item Ergebnis:
+		\vspace{-2mm}
 			\begin{figure}[!h]
 				\centering
 				\includegraphics[width=0.5\linewidth]{Pictures/1worker1ps}
 				\caption{Ein Arbeiter und ein Parameterserver}
 				\label{fig:1worker1ps}
 			\end{figure}
+		\vspace{-5mm}
 	\end{itemize}
 	\item Ein Arbeiter und zwei Parameterserver:
 	\begin{itemize}
 		\item Die Anzahl an Iterationen für eine Session wurde auf 500 gesetzt:
 		\item Ergebnis:
+		\vspace{-2mm}
 			\begin{figure}[!h]
 				\centering
 				\includegraphics[width=0.5\linewidth]{Pictures/2worker1ps}
 				\caption{Ein Arbeiter und zwei Parameterserver}
 				\label{fig:2worker1ps}
 			\end{figure}
+		\vspace{-5mm}
 	\end{itemize}
 	\item Ein Arbeiter und drei Parameterserver:
 	\begin{itemize}
 		\item Die Anzahl an Iterationen für eine Session wurde auf 333 gesetzt:
 		\item Ergebnis:
+		\vspace{-2mm}
 			\begin{figure}[!h]
 				\centering
 				\includegraphics[width=0.5\linewidth]{Pictures/3worker1ps}
 				\caption{Ein Arbeiter und drei Parameterserver}
 				\label{fig:3worker1ps}
-			\end{figure}			
+			\end{figure}	
+		\vspace{-5mm}		
 	\end{itemize}
 \end{itemize}
 
+Dies zeigt, dass durch das verteilen der Anwendungen auf mehrere Arbeiter können Berechnungen parallel durchgeführt werden, wodurch sich die Performance verbessert.
