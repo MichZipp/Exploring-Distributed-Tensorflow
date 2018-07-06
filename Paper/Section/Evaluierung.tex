@@ -1,5 +1,5 @@
 \section{Evaluierung}
-Die Nutzung einer verteilten TensorFlow Umgebung zeigt deutliche Performance Vorteile. Bei der im letzten Kapitel entwickelte Anwendung führen Arbeiter einfache Berechnungen durch und aktualisieren nach jeder Iteration die Variablen auf dem Parameterserver. Bei dieser Anwendung verkürzt sich jedoch die Ausführungszeit nicht, da die Berechnung zu wenig Zeit in Anspruch nimmt und die Anzahl an Iterationen vorgegeben ist. Es ist aber zu sehen, dass wenn mehr als ein Arbeiter eingesetzt wird, sich mit jedem zusätzlichen Arbeiter sich das Ergebnis der Berechnung verbessert. D.h. wenn anstatt einem Arbeiter zwei Arbeiter verwendet werden würden, bräuchten wir pro Arbeiter nur die Hälfte an Iteration und somit die halbe Zeit, um das selbe Ergebnis zu erhalten. Um dies zu demonstrieren, können wir die Anwendung mit  unterschiedlicher Anzahl an Arbeitern starten und manuell die Anzahl an Iteration anpassen. Folgendes Ergebnis hat sich dabei ergeben:
+Die Nutzung einer verteilten TensorFlow Umgebung zeigt deutliche Performance Vorteile. Bei der im letzten Kapitel entwickelten Beispielanwendung führen Arbeiter einfache Berechnungen durch und aktualisieren nach jeder Iteration die Variablen auf dem Parameterserver. Bei dieser Anwendung verkürzt sich jedoch die Ausführungszeit nicht, da die Berechnung zu wenig Zeit in Anspruch nimmt und die Anzahl an Iterationen vorgegeben ist. Es ist aber zu sehen, dass mit steigender Anzahl der eingesetzten Arbeiter sich das Ergebnis verbessert. D.h. wenn anstatt einem Arbeiter zwei Arbeiter eingesetzt würden, brauchen wir pro Arbeiter nur die Hälfte an Iteration und somit die halbe Zeit, um das selbe Ergebnis zu erhalten. Um dies zu demonstrieren, können wir die Anwendung mit  unterschiedlicher Anzahl an Arbeitern starten und manuell die Anzahl an Iterationen anpassen. Folgendes Ergebnis hat sich dabei ergeben:
 
 \begin{itemize}
 	\item Ein Arbeiter und ein Parameterserver:
@@ -43,4 +43,4 @@ Die Nutzung einer verteilten TensorFlow Umgebung zeigt deutliche Performance Vor
 	\end{itemize}
 \end{itemize}
 
-Dies zeigt, dass durch das verteilen der Anwendungen auf mehrere Arbeiter können Berechnungen parallel durchgeführt werden, wodurch sich die Performance verbessert.
+Dies zeigt, dass durch das verteilen der Anwendungen auf mehrere Arbeiter Berechnungen parallel durchgeführt werden können, wodurch sich die Performance bzw. Berechnungszeit verbessert.

@@ -18,7 +18,7 @@
 
 
 \newacronym{ki}{KI}{Künstliche Intelligenz}
-\newacronym{gpu}{GPU}{Grphics Processing Unit}
+\newacronym{gpu}{GPU}{Graphics Processing Unit}
 \newacronym{bair}{BAIR}{Berkley AI Research}
 \newacronym{cpu}{CPU}{Central Processing Unit}
 \newacronym{api}{API}{Application Programming Interface}
@@ -50,7 +50,7 @@
 
 \begin{abstract}
 %\boldmath
-Der Einsatz einer \ac{ki} hat sich in den letzten Jahren sehr zugenommen. Einerseits werden die Technologien immer reifer und Big-Player wie Amazon, Microsoft, Facebook und Google versuchen die Forschung in diesem Bereich stark voranzutreiben. Anderseits ermöglichen die Fortschritte in Hardware wie \acs{cpu} und \acs{gpu} das diese Technologien optimal eingesetzt werden können. Einer der Hauptherausforderungen stellt jedoch immer noch die Performance dar, komplexe neuronale Netzen besitzen noch eine relativ hohe Trainingszeit von mehreren Stunden oder sogar Tagen. Dieser Artikel untersucht aktuelle Frameworks, mit welchen eine \ac{ki} umgesetzt werden kann. Dabei wird das Framework TensorFlow von Google im Detail betrachtet. Es wird aufgezeigt, wie durch eine verteilte Umgebung über mehrere Instanzen die Performance deutlich gesteigert werden kann. Dabei wird eine kleine Beispielspielanwendung Schritt für Schritt entwickelt, die die Konfiguration dieser Umgebung aufzeigt. Eine Evaluation bestätigt die Performancesteigerung bei der Nutzung von einer TensorFlow Umgebung aus mehreren Instanzen. 
+Der Einsatz einer \ac{ki} hat in den letzten Jahren stark zugenommen. Einerseits werden die Technologien immer ausgereifter und Big-Player wie Amazon, Microsoft, Facebook und Google treiben die Forschung in diesem Bereich stark voran. Anderseits ermöglichen die Fortschritte in Hardware wie \acs{cpu} und \acs{gpu}, dass diese Technologien optimal eingesetzt werden können. Eine der Hauptherausforderungen stellt die Performance dar, da komplexe neuronale Netzen noch immer eine relativ hohe Trainingszeit von mehreren Stunden oder sogar Tagen benötigen. Dieser Artikel untersucht aktuelle Frameworks, mit denen eine \ac{ki} umgesetzt werden kann. Dabei wird das Framework TensorFlow von Google im Detail betrachtet. Es wird aufgezeigt, wie durch eine verteilte Umgebung über mehrere Instanzen die Performance deutlich gesteigert werden kann. Dabei wird eine kleine Beispielspielanwendung Schritt für Schritt entwickelt, die die Konfiguration dieser Umgebung aufzeigt. Eine Evaluation bestätigt die Performancesteigerung bei der Nutzung einer verteilten TensorFlow Umgebung. 
 
 \end{abstract}
 \IEEEpeerreviewmaketitle
@@ -153,15 +153,30 @@ Accessed 01.07.2018
 \url{https://www.tensorflow.org/}
 Accessed 01.07.2018
 
-
 \bibitem{tensorflowjs}
 "Tensorflow.js"
 \url{https://js.tensorflow.org/}
 Accessed 03.07.2018
 
+\bibitem{tensorflowhadoop}
+"TensorFlow on Hadoop"
+\url{https://www.tensorflow.org/deploy/hadoop}
+Accessed 06.07.2018
 
+\bibitem{tensorflowkubernetes}
+"TensorFlow on Kubernetes"
+\url{https://banzaicloud.com/blog/tensorflow-on-k8s/}
+Accessed 06.07.2018
 
+\bibitem{tensorflowdocker}
+"TensorFlow on Docker"
+\url{https://github.com/tensorflow/ecosystem/tree/master/docker}
+Accessed 06.07.2018
 
+\bibitem{tensorflowspark}
+"TensorFlow on Apache Spark"
+\url{https://databricks.com/blog/2016/01/25/deep-learning-with-apache-spark-and-tensorflow.html}
+Accessed 06.07.2018
 
 \end{thebibliography}
 
