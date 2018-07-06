@@ -14,7 +14,7 @@ Als erstes müssen wir vier Instanzen aufsetzten. Wenn möglich sollte jede Inst
 Im Idealfall sollten Instanzen mit wesentlich mehr \ac{cpu} Leistung und einer zusätzlichen Grafikkarte eingesetzt werden, nur somit ist eine optimale Performance möglich. Im Rahmen dieser Arbeit standen mir diese Mittel nicht zur Verfügung.
 
 \subsection{Installation von TensorFlow}
-Nun müssen wir auf den virtuellen Maschinen Python und TensorFlow installieren. Python benötigen wir zum Entwickeln unserer Anwendung und wir nutzen Python's Paketmanager pip zur Installation von TensorFlow. Dazu müssen folgende Befehle auf den virtuellen Maschinen ausgeführt werden.
+Nun müssen wir auf den virtuellen Maschinen Python und TensorFlow installieren. Python benötigen wir zum Entwickeln unserer Beispielanwendung und wir nutzen Python's Paketmanager pip zur Installation von TensorFlow. Dazu müssen folgende Befehle auf den virtuellen Maschinen ausgeführt werden.
 \begin{itemize}
 	\item Installation von Python zur Entwicklung:\newline
 			\texttt{sudo apt-get install python3-dev}
@@ -51,7 +51,7 @@ Nachdem wir ein Cluster erstellt haben, müssen wir die jeweilige Instanz starte
 
 \vspace{2mm}
 \subsubsection{Parameterserver}
-Als nächstes müssen wir schauen, ob die aktuelle Instanz als Arbeiter oder Parameterserver dienen soll. Wenn die Instanz als Parameterserver dient, soll sie keine Berechnung durchführen, sondern warten bis ein Arbeiter Attribute anfordert oder aktualisiert.
+Als nächstes müssen wir schauen, ob die aktuelle Instanz als Arbeiter oder Parameterserver dienen soll. Wenn die Instanz als Parameterserver dient, soll sie keine Berechnung durchführen, sondern warten bis ein Arbeiter Attribute anfordert oder aktualisieren will.
 \begin{itemize}
 	\item Initialisierung einer Instanz als Parameterserver: \newline
 		\texttt{if FLAGS.job\_name == 'ps': 
@@ -60,7 +60,7 @@ Als nächstes müssen wir schauen, ob die aktuelle Instanz als Arbeiter oder Par
 
 \vspace{2mm}
 \subsubsection{Arbeiter}
-Wenn eine Instanz kein Parameterserver ist, ist sie automatisch ein Arbeiter und führt Berechnung durch. Die Arbeiter führen ihre Berechnungen synchron synchron durch und warten deshalb nach jeder Iteration, bis jeder Arbeiter die Variablen auf dem Parameterserver synchronisiert hat. Anschließend verteilt der Parameterserver wieder die aktualisierten Variablen an die Arbeiter. Wir wollen dabei nicht genauer auf die Berechnungen eingehen und nutzen daher einen Beispielcode eines Tutorials von TensorFlow und schauen uns an, wie die eine Berechnung auf einem Arbeiter durchgeführt wird:
+Wenn eine Instanz kein Parameterserver ist, ist sie automatisch ein Arbeiter und führt Berechnungen durch. Die Arbeiter führen ihre Berechnungen synchron durch und warten deshalb nach jeder Iteration, bis jeder Arbeiter die Variablen auf dem Parameterserver synchronisiert hat. Anschließend verteilt der Parameterserver wieder die aktualisierten Variablen an die Arbeiter. Wir wollen dabei nicht genauer auf die Berechnungen eingehen und nutzen daher einen Beispielcode eines Tutorials von TensorFlow und schauen uns an, wie die eine Berechnung auf einem Arbeiter durchgeführt wird:
 
 \begin{itemize}
 	\item Zuweisung einer Berechnung zu einem Arbeiter: \newline
@@ -80,10 +80,10 @@ Wenn eine Instanz kein Parameterserver ist, ist sie automatisch ein Arbeiter und
 		\texttt{sess.close()}
 \end{itemize}
 
-Nun haben wir alle wichtigen Konfiguration für unsere verteilte TensorFlow Umgebung vorgenommen. Der komplette Quellcode kann unter "https://github.com/MichZipp/Exploring-Distributed-Tensorflow/Code" gefunden. 
+Nun haben wir alle wichtigen Konfiguration für unsere verteilte TensorFlow Umgebung vorgenommen. Der komplette Quellcode der Beispielanwendung kann unter "https://github.com/MichZipp/Exploring-Distributed-Tensorflow/Code" gefunden werden. 
 
 \subsection{Starten einer Anwendung}
-Jetzt müssen wir die Anwendung nur noch starten, dazu müssen wir zuerst unsere \textit{"train.py"} mit dem \ac{ftp} auf unsere Instanzen kopieren. Als nächstes müssen wir die Anwendung auf jeder Instanz mit den richtigen Argumenten starten. Um diesen Prozess zu vereinfachen, schreiben wir uns ein kleines Bash-Skript, dass wir dann nur auf dem Master Arbeiter starten müssen:
+Jetzt müssen wir die Anwendung noch starten, dazu müssen wir zuerst unsere \textit{"train.py"} mit dem \ac{ftp} auf unsere Instanzen kopieren. Als nächstes müssen wir die Anwendung auf jeder Instanz mit den richtigen Argumenten starten. Um diesen Prozess zu vereinfachen, schreiben wir uns ein kleines Bash-Skript, dass wir dann nur auf dem Master Arbeiter starten müssen:
 
 \begin{itemize}
 	\item Bash-Script \textit{"run.sh"} für ein Cluster aus zwei Arbeitern und einem Parameterserver: \newline

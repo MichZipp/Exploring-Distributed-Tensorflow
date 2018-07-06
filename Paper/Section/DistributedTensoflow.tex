@@ -2,7 +2,7 @@
 Nachdem im vorherigen Kapitel einen kleiner Überblick über TensorFlow gegeben wurde, soll jetzt die Verteilung einer TensorFlow Umgebung auf mehrere Instanzen näher betrachtet werden. Dieses Kapitel stellt nötiges Wissen bereit, dass im nächsten Kapitel im Rahmen eines Tutorials zur Einrichtung einer verteilten TensorFlow Umgebung eingesetzt wird. 
 
 \subsection{Architektur}
-Im folgenden wird die Architektur einer verteilten TensorFlow Umgebung genauer beschrieben. Dabei wird zwischen dem Paramter Server und Arbeiter unterschieden.
+Im folgenden wird die Architektur einer verteilten TensorFlow Umgebung genauer beschrieben. Dabei wird zwischen dem Parameterserver und Arbeiter unterschieden.
 
 \subsubsection{Parameterserver}
 Der Parameterserver verwaltet das aktuelle Model mit seinen Gewichtungen und Variablen und verteilt es an die Arbeiter. Falls durch mehrere Arbeiter zu viel Ein-/Ausgabe Anfragen an den Parameterserver erzeugt werden, können mehrere Parameterserver eingesetzt werden, um die Last zu verteilen. Mehreren Parameterserver synchronisieren das Model untereinander. Abbildung \ref{fig:architektur-servemodel} zeigt, wie das Verteilen des Models an die Arbeiter aussehen kann. 
@@ -33,7 +33,7 @@ Die Arbeiter lesen gleichzeitig das Model vom Parameterserver und berechnen mit 
 Die Arbeiter lesen asynchron von den Parameterserver, berechnen ihre Trainingsoperation und senden asynchrone Aktualisierungen an den Parameterserver. Zu jedem Zeitpunkt könnten zwei verschiedene Arbeiter unterschiedliche Werte für ihr Model besitzen.
 
 \subsection{Weitere Möglichkeiten}
-Bisher wurde die einfachste Methode beschrieben, wie ein verteilte TensorFlow Umgebung eingerichtet werden kann. 
+Bisher wurde die einfachste Methode beschrieben, wie ein verteilte TensorFlow Umgebung eingerichtet werden kann. Es gibt auch die Möglichkeit eine verteilte TensorFlow Umgebung auf Basis von Hadoop \cite{tensorflowhadoop}, Kubernetes \cite{tensorflowkubernetes}, Docker \cite{tensorflowdocker} und Apache Spark \cite{tensorflowspark} zu erstellen.
 
 
 
