@@ -1,21 +1,7 @@
 # Exploring Distributed Tensorflow
-## Virtuelle Maschinen mit Ubuntu
-* Änderungen des VM Namen:
-    * `sudo nano /etc/hostname`
-    * `sudo nano /etc/hosts`
-    * Füge folgenede Zeilen ein:
-        ```
-        141.28.106.55 tensorflow0
-        141.28.106.56 tensorflow1
-        141.28.106.6 tensorflow2
-        141.28.106.6 tensorflow3
-        ```
-* Installation von Python:
-    * `sudo apt-get update` 
-    * `sudo apt-get install python3-pip python3-dev` 
-* Installation von Tensorflow:
-    * `pip3 install tensorflow`
 
+This paper was done as part of the modul "Internet of Things" at Furtwangen University.
 
-## Quellen:
-* https://mesosphere.com/blog/tensorflow-gpu-support-deep-learning/
+The paper discribes different Frameworks for deep learning and has a closer look to Tensorflows. It is shown how a distributed Tensorflow environment can be created and a training session can run on it!
+
+Author: Michael Zipperle
