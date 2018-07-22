@@ -10,17 +10,17 @@ Der Parameterserver verwaltet das aktuelle Modell mit seinen Gewichtungen und Va
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{Pictures/Architektur-ServeModel}
-	\caption[Verteilen des Models auf die Arbeiter]{Verteilen des Models auf die Arbeiter}
+	\caption[Verteilen des Modells auf die Arbeiter]{Verteilen des Modells auf die Arbeiter}
 	\label{fig:architektur-servemodel}
 \end{figure}
 
 \subsubsection{Arbeiter}
-Arbeiter führen ressourcenintensive Berechnungen zur Optimierung des vom Parameterserver bereitgestellten Modells durch. Nach der Optimierung sendet der Arbeiter das neue Modell mit seinen Gewichtungen und Variablen zum Parameterserver. Je mehr Arbeiter eingesetzt werden, desto schneller und effizienter kann ein Model trainiert werden. Abbildung \ref{fig:architektur-updatemodel} zeigt, wie die Berechnung des Models und die Aktualisierung des Models auf dem Parameterserver aussehen kann. Der Master Arbeiter koordiniert die Trainingsvorgänge und kümmert sich um die Initialisierung des Modells, Zählen der Anzahl der ausgeführten Trainingsschritte, Speichern und Wiederherstellen von Modellkontrollpunkten.
+Arbeiter führen ressourcenintensive Berechnungen zur Optimierung des vom Parameterserver bereitgestellten Modells durch. Nach der Optimierung sendet der Arbeiter das neue Modell mit seinen Gewichtungen und Variablen zum Parameterserver. Je mehr Arbeiter eingesetzt werden, desto schneller und effizienter kann ein Modell trainiert werden. Abbildung \ref{fig:architektur-updatemodel} zeigt, wie die Berechnung des Modells und die Aktualisierung des Modells auf dem Parameterserver aussehen kann. Der Master Arbeiter koordiniert die Trainingsvorgänge und kümmert sich um die Initialisierung des Modells, Zählen der Anzahl der ausgeführten Trainingsschritte, Speichern und Wiederherstellen von Modellkontrollpunkten.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{Pictures/Architektur-UpdateModel}
-	\caption[Berechnung des Models auf Arbeiter + Updaten der Variablen auf dem Parameterserver]{Berechnung des Models auf Arbeiter + Updaten der Variablen auf dem Parameterserver}
+	\caption[Berechnung des Modells auf Arbeiter + Updaten der Variablen auf dem Parameterserver]{Berechnung des Modells auf Arbeiter + Updaten der Variablen auf dem Parameterserver}
 	\label{fig:architektur-updatemodel}
 \end{figure}
 
